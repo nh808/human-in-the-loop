@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Blog - Zenn風</title>
+    <link rel="stylesheet" href="styles-zenn.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <h1 class="logo">
+                    <a href="/">📝 TechBlog</a>
+                </h1>
+            </div>
+            <div class="header-center">
+                <div class="search-container">
+                    <input type="text" placeholder="記事を検索" class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+            <div class="header-right">
+                <button class="publish-btn">📝 投稿</button>
+                <div class="user-menu">
+                    <div class="user-avatar">👤</div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div class="main-container">
+        <!-- 左サイドバー -->
+        <aside class="left-sidebar">
+            <nav class="sidebar-nav">
+                <ul>
+                    <li><a href="#" class="nav-item active">🏠 ホーム</a></li>
+                    <li><a href="#" class="nav-item">📖 記事</a></li>
+                    <li><a href="#" class="nav-item">📚 本</a></li>
+                    <li><a href="#" class="nav-item">💡 アイデア</a></li>
+                    <li><a href="#" class="nav-item">👥 ユーザー</a></li>
+                </ul>
+            </nav>
+            <div class="sidebar-section">
+                <h3>人気のタグ</h3>
+                <div class="tag-list">
+                    <a href="#" class="sidebar-tag">JavaScript</a>
+                    <a href="#" class="sidebar-tag">React</a>
+                    <a href="#" class="sidebar-tag">AI</a>
+                    <a href="#" class="sidebar-tag">Python</a>
+                    <a href="#" class="sidebar-tag">Web開発</a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- メインコンテンツエリア -->
+        <main class="main-content">
+            <!-- タブフィルタ -->
+            <div class="content-tabs">
+                <button class="tab-item active" data-tab="tech">Tech</button>
+                <button class="tab-item" data-tab="ideas">アイデア</button>
+                <button class="tab-item" data-tab="books">本</button>
+                <button class="tab-item" data-tab="trending">トレンド</button>
+            </div>
+
+            <!-- 記事一覧 -->
+            <div class="articles-container">
+                <article class="article-card">
+                    <div class="article-emoji">🤖</div>
+                    <div class="article-content">
+                        <h2 class="article-title">
+                            <a href="ai-learning-journey.html">生成AIを学ぶ旅路：Claude Codeとの出会い</a>
+                        </h2>
+                        <div class="article-meta">
+                            <span class="article-author">Tech Blogger</span>
+                            <span class="article-date">2024/01/09</span>
+                        </div>
+                        <div class="article-tags">
+                            <span class="tag">AI</span>
+                            <span class="tag">Claude</span>
+                            <span class="tag">学習記録</span>
+                        </div>
+                        <div class="article-stats">
+                            <span class="stat">👍 12</span>
+                            <span class="stat">💬 3</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-emoji">🛠️</div>
+                    <div class="article-content">
+                        <h2 class="article-title">
+                            <a href="blog-development.html">技術ブログサイトの開発記録</a>
+                        </h2>
+                        <div class="article-meta">
+                            <span class="article-author">Tech Blogger</span>
+                            <span class="article-date">2024/01/09</span>
+                        </div>
+                        <div class="article-tags">
+                            <span class="tag">Web開発</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">プロジェクト</span>
+                        </div>
+                        <div class="article-stats">
+                            <span class="stat">👍 8</span>
+                            <span class="stat">💬 1</span>
+                        </div>
+                    </div>
+                </article>
+
+                <article class="article-card">
+                    <div class="article-emoji">🧮</div>
+                    <div class="article-content">
+                        <h2 class="article-title">
+                            <a href="demos/calculator/index.html">電卓デモアプリの実装</a>
+                        </h2>
+                        <div class="article-meta">
+                            <span class="article-author">Tech Blogger</span>
+                            <span class="article-date">2024/01/09</span>
+                        </div>
+                        <div class="article-tags">
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">デモ</span>
+                        </div>
+                        <div class="article-stats">
+                            <span class="stat">👍 5</span>
+                            <span class="stat">💬 2</span>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </main>
+
+        <!-- 右サイドバー -->
+        <aside class="right-sidebar">
+            <div class="sidebar-section">
+                <h3>トレンド</h3>
+                <div class="trending-list">
+                    <div class="trending-item">
+                        <span class="trending-rank">1</span>
+                        <span class="trending-tag">ChatGPT</span>
+                    </div>
+                    <div class="trending-item">
+                        <span class="trending-rank">2</span>
+                        <span class="trending-tag">React</span>
+                    </div>
+                    <div class="trending-item">
+                        <span class="trending-rank">3</span>
+                        <span class="trending-tag">Next.js</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>おすすめユーザー</h3>
+                <div class="user-list">
+                    <div class="user-item">
+                        <div class="user-avatar-small">👨‍💻</div>
+                        <div class="user-info">
+                            <div class="user-name">Developer A</div>
+                            <div class="user-desc">フロントエンド開発者</div>
+                        </div>
+                    </div>
+                    <div class="user-item">
+                        <div class="user-avatar-small">👩‍💻</div>
+                        <div class="user-info">
+                            <div class="user-name">Engineer B</div>
+                            <div class="user-desc">AI研究者</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script-zenn.js"></script>
+</body>
+</html>

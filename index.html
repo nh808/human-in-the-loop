@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Human in the Loop</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- ヘッダー -->
+    <header class="header">
+        <div class="header-container">
+            <div class="header-left">
+                <h1 class="logo">
+                    <a href="/">🔄 Human in the Loop</a>
+                </h1>
+                <nav class="main-nav">
+                    <a href="#home" class="nav-link">ホーム</a>
+                    <a href="#posts" class="nav-link">記事</a>
+                    <a href="#about" class="nav-link">プロフィール</a>
+                    <a href="#contact" class="nav-link">お問い合わせ</a>
+                </nav>
+            </div>
+            <div class="header-right">
+                <div class="search-container">
+                    <input type="text" placeholder="記事を検索" class="search-input">
+                    <button class="search-btn">🔍</button>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- メインコンテンツ -->
+    <div class="main-container">
+        <!-- メインコンテンツエリア -->
+        <main class="main-content">
+            <!-- ヒーローセクション -->
+            <section id="home" class="hero-section">
+                <h2>Tech Blog</h2>
+                <p>AI・機械学習・開発について</p>
+            </section>
+
+            <!-- 記事セクション -->
+            <section id="posts" class="posts-section">
+                <h2>最新記事</h2>
+
+                <div class="articles-container">
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="ai-learning-journey.html">生成AIを学ぶ旅路：Claude Codeとの出会い</a>
+                            </h3>
+                            <p class="article-description">Claude Codeを使って生成AIについて学習した経験と、技術ブログ開発の記録</p>
+                            <div class="article-meta">
+                                <span class="article-date">2024/01/09</span>
+                                <div class="article-tags">
+                                    <span class="tag">AI</span>
+                                    <span class="tag">Claude</span>
+                                    <span class="tag">学習記録</span>
+                                </div>
+                            </div>
+                            <div class="article-stats">
+                                <span class="stat">👍 12</span>
+                                <span class="stat">💬 3</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="blog-development.html">技術ブログサイトの開発記録</a>
+                            </h3>
+                            <p class="article-description">HTML/CSS/JavaScriptを使った技術ブログサイトの設計と実装</p>
+                            <div class="article-meta">
+                                <span class="article-date">2024/01/09</span>
+                                <div class="article-tags">
+                                    <span class="tag">Web開発</span>
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">プロジェクト</span>
+                                </div>
+                            </div>
+                            <div class="article-stats">
+                                <span class="stat">👍 8</span>
+                                <span class="stat">💬 1</span>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <div class="article-content">
+                            <h3 class="article-title">
+                                <a href="demos/calculator/index.html">電卓デモアプリの実装</a>
+                            </h3>
+                            <p class="article-description">JavaScript で作成したインタラクティブな電卓アプリケーション</p>
+                            <div class="article-meta">
+                                <span class="article-date">2024/01/09</span>
+                                <div class="article-tags">
+                                    <span class="tag">JavaScript</span>
+                                    <span class="tag">デモ</span>
+                                </div>
+                            </div>
+                            <div class="article-stats">
+                                <span class="stat">👍 5</span>
+                                <span class="stat">💬 2</span>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- プロフィールセクション -->
+            <section id="about" class="about-section">
+                <h2>プロフィール</h2>
+                <div class="profile-card">
+                    <div class="profile-avatar">👨‍💻</div>
+                    <div class="profile-info">
+                        <h3>Tech Blogger</h3>
+                        <p>AI・機械学習・開発について書いています。Claude Codeを使って学習・実験中。</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- お問い合わせセクション -->
+            <section id="contact" class="contact-section">
+                <h2>お問い合わせ</h2>
+                <form class="contact-form" id="contactForm">
+                    <div class="form-group">
+                        <label for="name">名前</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">メールアドレス</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">メッセージ</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit">送信</button>
+                </form>
+            </section>
+        </main>
+
+        <!-- サイドバー -->
+        <aside class="sidebar">
+            <div class="sidebar-section">
+                <h3>人気記事</h3>
+                <div class="popular-posts">
+                    <a href="ai-learning-journey.html" class="popular-post">
+                        <span class="popular-post-title">生成AIを学ぶ旅路</span>
+                        <span class="popular-post-stats">👍 12</span>
+                    </a>
+                    <a href="blog-development.html" class="popular-post">
+                        <span class="popular-post-title">ブログサイト開発記録</span>
+                        <span class="popular-post-stats">👍 8</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="sidebar-section">
+                <h3>カテゴリー</h3>
+                <div class="category-list">
+                    <a href="#" class="category-item">AI・機械学習 (2)</a>
+                    <a href="#" class="category-item">Web開発 (3)</a>
+                    <a href="#" class="category-item">JavaScript (4)</a>
+                    <a href="#" class="category-item">学習記録 (5)</a>
+                </div>
+            </div>
+
+            <div class="sidebar-section">
+                <h3>タグ</h3>
+                <div class="tag-cloud">
+                    <a href="#" class="tag-cloud-item">AI</a>
+                    <a href="#" class="tag-cloud-item">Claude</a>
+                    <a href="#" class="tag-cloud-item">JavaScript</a>
+                    <a href="#" class="tag-cloud-item">React</a>
+                    <a href="#" class="tag-cloud-item">Web開発</a>
+                    <a href="#" class="tag-cloud-item">学習記録</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

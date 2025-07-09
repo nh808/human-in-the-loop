@@ -1,0 +1,20 @@
+[
+  {
+    "id": "ai-learning-journey",
+    "title": "生成AIを学ぶ旅路：Claude Codeとの出会い",
+    "date": "2024-01-09",
+    "description": "Claude Codeを使って生成AIについて学習した経験と、技術ブログ開発の記録",
+    "tags": ["AI", "Claude", "学習記録"],
+    "author": "Tech Blogger",
+    "filename": "2024-01-09-ai-learning-journey.md"
+  },
+  {
+    "id": "blog-development",
+    "title": "技術ブログサイトの開発記録",
+    "date": "2024-01-09",
+    "description": "HTML/CSS/JavaScriptを使った技術ブログサイトの設計と実装",
+    "tags": ["Web開発", "JavaScript", "プロジェクト"],
+    "author": "Tech Blogger",
+    "filename": "2024-01-09-blog-development.md"
+  }
+]

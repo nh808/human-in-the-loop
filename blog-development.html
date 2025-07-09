@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>技術ブログサイトの開発記録 - マイブログ</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .article-container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-top: 2rem;
+        }
+        
+        .article-header {
+            margin-bottom: 2rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #e8f4f8;
+        }
+        
+        .article-title {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+        
+        .article-meta {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+        
+        .article-date {
+            color: #999;
+            font-size: 0.9rem;
+        }
+        
+        .article-tags {
+            display: flex;
+            gap: 0.5rem;
+            flex-wrap: wrap;
+        }
+        
+        .back-link {
+            display: inline-block;
+            margin-bottom: 2rem;
+            color: #3498db;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        
+        .back-link:hover {
+            text-decoration: underline;
+        }
+        
+        .article-content {
+            line-height: 1.8;
+            color: #333;
+        }
+        
+        .article-content h1,
+        .article-content h2,
+        .article-content h3 {
+            color: #2c3e50;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .article-content h1 {
+            font-size: 2rem;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+        
+        .article-content h2 {
+            font-size: 1.5rem;
+        }
+        
+        .article-content h3 {
+            font-size: 1.2rem;
+        }
+        
+        .article-content pre {
+            background: #f8f9fa;
+            padding: 1rem;
+            border-radius: 5px;
+            overflow-x: auto;
+            border-left: 4px solid #3498db;
+            margin: 1rem 0;
+        }
+        
+        .article-content code {
+            background: #f8f9fa;
+            padding: 0.2rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'Courier New', monospace;
+            font-size: 0.9rem;
+        }
+        
+        .article-content pre code {
+            background: none;
+            padding: 0;
+        }
+        
+        .article-content ul {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        .article-content li {
+            margin-bottom: 0.5rem;
+        }
+        
+        .article-content a {
+            color: #3498db;
+            text-decoration: none;
+        }
+        
+        .article-content a:hover {
+            text-decoration: underline;
+        }
+        
+        .article-content p {
+            margin-bottom: 1rem;
+        }
+        
+        @media (max-width: 768px) {
+            .article-container {
+                margin: 1rem;
+                padding: 1rem;
+            }
+            
+            .article-title {
+                font-size: 1.8rem;
+            }
+            
+            .article-meta {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <h1><a href="index.html" style="color: #2c3e50; text-decoration: none;">マイブログ</a></h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html#home">ホーム</a></li>
+                <li><a href="index.html#about">プロフィール</a></li>
+                <li><a href="index.html#posts">記事</a></li>
+                <li><a href="index.html#contact">お問い合わせ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="article-container">
+            <a href="index.html#posts" class="back-link">← 記事一覧に戻る</a>
+            
+            <article>
+                <div class="article-header">
+                    <h1 class="article-title">技術ブログサイトの開発記録</h1>
+                    <div class="article-meta">
+                        <span class="article-date">2024/1/9</span>
+                        <div class="article-tags">
+                            <span class="tag">Web開発</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">プロジェクト</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="article-content">
+                    <h1>技術ブログサイトの開発記録</h1>
+
+                    <h2>プロジェクト概要</h2>
+                    <p>このブログサイトは、生成AIを活用した技術記事の公開とデモアプリケーションの showcase を目的として開発されました。</p>
+
+                    <h2>技術スタック</h2>
+
+                    <h3>フロントエンド</h3>
+                    <ul>
+                        <li><strong>HTML5</strong>: セマンティックなマークアップ</li>
+                        <li><strong>CSS3</strong>: モダンなスタイリング、CSS GridとFlexboxを活用</li>
+                        <li><strong>JavaScript (ES6+)</strong>: 動的なコンテンツ表示と相互作用</li>
+                    </ul>
+
+                    <h3>コンテンツ管理</h3>
+                    <ul>
+                        <li><strong>Markdown</strong>: 記事の執筆形式</li>
+                        <li><strong>JSON</strong>: 記事メタデータの管理</li>
+                        <li><strong>Claude Code</strong>: 記事作成・編集環境</li>
+                    </ul>
+
+                    <h2>設計方針</h2>
+
+                    <h3>1. シンプルで拡張可能</h3>
+                    <pre><code>// 記事表示の基本構造
+class BlogPost {
+    constructor(data) {
+        this.title = data.title;
+        this.content = data.content;
+        this.date = data.date;
+        this.tags = data.tags;
+    }
+    
+    render() {
+        return `
+            &lt;article class="post"&gt;
+                &lt;h2&gt;${this.title}&lt;/h2&gt;
+                &lt;div class="post-meta"&gt;
+                    &lt;span class="date"&gt;${this.date}&lt;/span&gt;
+                    &lt;span class="tags"&gt;${this.tags.join(', ')}&lt;/span&gt;
+                &lt;/div&gt;
+                &lt;div class="content"&gt;${this.content}&lt;/div&gt;
+            &lt;/article&gt;
+        `;
+    }
+}</code></pre>
+
+                    <h3>2. レスポンシブデザイン</h3>
+                    <pre><code>/* モバイルファースト設計 */
+.posts-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+}
+
+@media (min-width: 768px) {
+    .posts-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .posts-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}</code></pre>
+
+                    <h3>3. アクセシビリティ</h3>
+                    <ul>
+                        <li>セマンティックHTML</li>
+                        <li>キーボードナビゲーション</li>
+                        <li>スクリーンリーダー対応</li>
+                    </ul>
+
+                    <h2>実装の特徴</h2>
+
+                    <h3>Markdown記事のHTML変換</h3>
+                    <pre><code>// Markdownパーサーの基本実装
+function parseMarkdown(markdown) {
+    return markdown
+        .replace(/^# (.*$)/gm, '&lt;h1&gt;$1&lt;/h1&gt;')
+        .replace(/^## (.*$)/gm, '&lt;h2&gt;$1&lt;/h2&gt;')
+        .replace(/^### (.*$)/gm, '&lt;h3&gt;$1&lt;/h3&gt;')
+        .replace(/\*\*(.*?)\*\*/g, '&lt;strong&gt;$1&lt;/strong&gt;')
+        .replace(/\*(.*?)\*/g, '&lt;em&gt;$1&lt;/em&gt;')
+        .replace(/`(.*?)`/g, '&lt;code&gt;$1&lt;/code&gt;');
+}</code></pre>
+
+                    <h3>デモアプリの埋め込み</h3>
+                    <pre><code>&lt;!-- デモアプリのiframe埋め込み --&gt;
+&lt;div class="demo-container"&gt;
+    &lt;iframe src="./demos/calculator/index.html" 
+            width="100%" 
+            height="400"
+            frameborder="0"&gt;
+    &lt;/iframe&gt;
+&lt;/div&gt;</code></pre>
+
+                    <h2>今後の改善点</h2>
+
+                    <h3>1. パフォーマンス最適化</h3>
+                    <ul>
+                        <li>画像の遅延読み込み</li>
+                        <li>コードの最小化</li>
+                        <li>キャッシュ戦略の実装</li>
+                    </ul>
+
+                    <h3>2. 機能拡張</h3>
+                    <ul>
+                        <li>記事検索機能</li>
+                        <li>タグフィルタリング</li>
+                        <li>ダークモード対応</li>
+                    </ul>
+
+                    <h3>3. SEO対策</h3>
+                    <ul>
+                        <li>メタタグの最適化</li>
+                        <li>構造化データの実装</li>
+                        <li>サイトマップの生成</li>
+                    </ul>
+
+                    <h2>まとめ</h2>
+                    <p>このブログサイトは、シンプルながら拡張可能な設計で構築されています。Claude Codeを活用することで、効率的な開発が可能になりました。</p>
+                    <p>今後も機能追加や改善を継続し、より良い技術ブログプラットフォームを目指します。</p>
+
+                    <hr style="margin: 2rem 0; border: none; border-top: 1px solid #eee;">
+                    <p style="font-style: italic; color: #666;"><em>開発期間: 2024年1月</em><br>
+                    <em>使用技術: HTML5, CSS3, JavaScript, Markdown</em></p>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 マイブログ. All rights reserved.</p>
+    </footer>
+</body>
+</html>
